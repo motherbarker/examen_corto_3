@@ -1,0 +1,22 @@
+//Carlos Daniel Valdez 21976
+//ejercicio 5
+
+#include <stdio.h>
+
+int main()
+{
+    int n = 5;
+    int val[5];
+    for(int i=0; i<=n; i++){
+        printf("Ingrese el elemento %d del array: ", i);
+        scanf("%d", &val[i]);
+    }
+
+    int *pVal;
+    pVal = val;
+    for(int i=0; i<= n; i++){
+        printf("%d ",2* *(pVal+i));
+    }
+    
+    return 0;
+}
